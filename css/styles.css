@@ -97,29 +97,44 @@ margin-bottom: 0;
 .menu-item:not(:last-child) {
     margin-right: 40px;
 }
+
 .menu-link {
+position: relative;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 20px;
 color: var(--title-color-navy-blue);
 transition:color var(--transition-duration-and-func);
 
+}
+.menu-link::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 4px;
+left: 0px;
+top: 44px;
+background-color: transparent;
+border-radius: 2px;
+}
+
+.activ-studio.menu-link::after{
+background-color: #404BBF;
+}
+
+.activ-portfolio.menu-link::after {
+background-color: #404BBF;
+}
+.activ-contacts.menu-link::after {
+background-color: #404BBF;
 }
 
 .menu-link:hover,
 .menu-link:focus {
 color: var(--color-ocean);
 }
-
-/*position: absolute;
-width: 48px;
-height: 4px;
-left: 0px;
-top: 44px;
-background: #404BBF;
-border-radius: 2px;*/
-
 
 .page-address {
 font-style: normal;
