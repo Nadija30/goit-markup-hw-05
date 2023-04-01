@@ -116,21 +116,15 @@ width: 100%;
 height: 4px;
 left: 0px;
 top: 44px;
-background-color: transparent;
 border-radius: 2px;
 }
 
-.activ-studio.menu-link::after{
-background-color: #404BBF;
-}
-
-.activ-portfolio.menu-link::after {
-background-color: #404BBF;
-}
+.activ-studio.menu-link::after,
+.activ-portfolio.menu-link::after,
 .activ-contacts.menu-link::after {
 background-color: #404BBF;
-}
 
+}
 .menu-link:hover,
 .menu-link:focus {
 color: var(--color-ocean);
