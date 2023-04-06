@@ -366,12 +366,13 @@ width: 168px;
 height: 88px;
 border-radius: 4px;
 border: 1px solid #8E8F99;
-transition: border var(--transition-duration-and-func),
-fill var(--transition-duration-and-func);
+transition: border var(--transition-duration-and-func);
 }
 .customers-list-icon {
 fill: #AFB1B8;
+transition:fill var(--transition-duration-and-func);
 }
+
 .customers-list-link:hover, .customers-list-link:focus {
 border: 1px solid #404BBF;
 }
@@ -563,6 +564,7 @@ letter-spacing: 0.04em;
 color: var(--color-iris);
 background-color: var(--color-cloud);
 border: 1px solid #E7E9FC;
+border-radius: 4px;
 padding: 12px 24px;
 transition: color var(--transition-duration-and-func),
 background-color var(--transition-duration-and-func),
